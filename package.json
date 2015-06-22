@@ -1,0 +1,5 @@
+{
+    "name": "credentialModule",
+    "version": "1.0.0",
+    "main": "./build/Release/credentialModule"
+}
