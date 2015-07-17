@@ -1,6 +1,6 @@
 #  WindowsCredentialManager
 
-## An Implementation of Store / Retrieve Passwords to/From windows Credential Store.
+## An implementation of Store / Retrieve / Delete username and passwords to/from the Windows Credential Manager.
 
 Windows Credential Manager allows you to store credentials, such as usernames and passwords that you use to log on to websites or other computers on a network. By storing your credentials, Windows can automatically log you on to websites or other computers. Credentials are saved in special folders on your computer called vaults. Windows and programs (such as web browsers) can securely give the credentials in the vaults to other computers and websites locally.
 
