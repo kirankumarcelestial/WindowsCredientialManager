@@ -22,8 +22,7 @@ To build, you must have nodejs, npm, and node-gyp installed. Furthermore, node-g
 If you have problem configuring Node-gyp with Python, I have a already built module (wincredmgr.node) that can be directly copied (wincredmgr.node and wincredmgr-x86.node) and used as shown in example.js
 
 
-###Usage
-========
+##Usage
 
     var wincredmgr = require('wincredmgr');
 
