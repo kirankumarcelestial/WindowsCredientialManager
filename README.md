@@ -14,7 +14,7 @@ I could not find any npm module that could do this, so ended up writing one. tho
 
 ##To build the Package
 
-To build, you must have nodejs, npm, and node-gyp installed, which requires a C++ compiler and Python 2.7.3 or higher.
+To build, you must have nodejs, npm, and node-gyp installed. Furthermore, node-gyp requires a C++ compiler and Python 2.7.3 or higher installed.
 
     $ npm install node-gyp
     $ node-gyp rebuild
