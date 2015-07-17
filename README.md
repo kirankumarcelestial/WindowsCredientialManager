@@ -1,7 +1,6 @@
 #  WindowsCredentialManager
 
 ## An Implementation of Store / Retrieve Passwords to/From windows Credential Store.
--------------------------------------------------------------------------------------
 
 Windows Credential Manager allows you to store credentials, such as usernames and passwords that you use to log on to websites or other computers on a network. By storing your credentials, Windows can automatically log you on to websites or other computers. Credentials are saved in special folders on your computer called vaults. Windows and programs (such as web browsers) can securely give the credentials in the vaults to other computers and websites locally.
 
@@ -13,20 +12,26 @@ I could not find any npm module that could do this, so ended up writing one. tho
     $ npm install wincredmgr
 
 
-##To Rebuild the Package
+##To build the Package
 
-    $ node-gyp build
+To build, you must have node-gyp installed, which requires a C++ compiler and Python 2.7.3 or higher.
 
-If you have problem configuring Node-gyp with Python, I have a already built module (wincredmgr.node) that can be directly copied and used as shown in example.js
+    $ node-gyp rebuild
+
+If you have problem configuring Node-gyp with Python, I have a already built module (wincredmgr.node) that can be directly copied (wincredmgr.node and wincredmgr-x86.node) and used as shown in example.js
+
 
 ###Usage
 ========
 
     var wincredmgr = require('wincredmgr');
 
-    var boolResult = wincredmgr.WriteCredentials('username','secretpassword','targetName');
-    console.log('Writing credentials successful: ' + boolResult);
+    var writeResult = wincredmgr.WriteCredentials('username', 'secretpassword', 'targetName');
+    console.log('Writing credentials successful: ' + writeResult);
 
     var credentials = wincredmgr.ReadCredentials('targetName');
     console.log(credentials.username);
     console.log(credentials.password);
+
+    var deleteResult = wincredmgr.DeleteCredentials('targetName');
+    console.log('Deleting credentials successful: ' + deleteResult);

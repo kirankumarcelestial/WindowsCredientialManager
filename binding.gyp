@@ -1,8 +1,8 @@
 {
   "targets": [
     {
-      "target_name": "credentialModule",
-      "sources": [ "credentialModule.cpp" ]
+      "target_name": "wincredmgr",
+      "sources": [ "wincredmgr.cpp" ]
     }
   ]
 }

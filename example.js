@@ -1,7 +1,11 @@
-var wincredmgr = require('./credentialModule');
+var wincredmgr = require('./wincredmgr-win-' + require('os').arch());
 
-console.log('Writing credentials successful: ' + wincredmgr.WriteCredentials('username','secretpassword','targetName'));
+var writeResult = wincredmgr.WriteCredentials('username', 'secretpassword', 'targetName');
+console.log('Writing credentials successful: ' + writeResult);
 
 var credentials = wincredmgr.ReadCredentials('targetName');
 console.log(credentials.username);
 console.log(credentials.password);
+
+var deleteResult = wincredmgr.DeleteCredentials('targetName');
+console.log('Deleting credentials successful: ' + deleteResult);

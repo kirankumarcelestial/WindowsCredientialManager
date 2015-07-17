@@ -1,9 +1,9 @@
 {
-    "name": "credentialModule",
+    "name": "wincredmgr",
     "author": "Kiran Kumar",
     "contributors": [
     	"Roi Atalla"
     ],
     "version": "2.0.0",
-    "main": "./build/Release/credentialModule"
+    "main": "./build/Release/wincredmgr"
 }
