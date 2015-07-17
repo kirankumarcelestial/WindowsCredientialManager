@@ -1,5 +1,7 @@
-var cm = require('./build/Release/credentialModule');
+var wincredmgr = require('./build/Release/credentialModule');
 
-console.warn(cm.WriteToWindowsCredMgr('Kiran','kumar','test'));
-console.warn(cm.ReadUserNameFromWindowsCredMgr('test'));
-console.warn(cm.ReadPasswordNameFromWindowsCredMgr('test'));
+console.log('Writing credentials successful: ' + wincredmgr.WriteCredentials('username','secretpassword','targetName'));
+
+var credentials = wincredmgr.ReadCredentials('targetName');
+console.log(credentials.username);
+console.log(credentials.password);
