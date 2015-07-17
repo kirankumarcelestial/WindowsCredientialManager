@@ -14,8 +14,9 @@ I could not find any npm module that could do this, so ended up writing one. tho
 
 ##To build the Package
 
-To build, you must have node-gyp installed, which requires a C++ compiler and Python 2.7.3 or higher.
+To build, you must have nodejs, npm, and node-gyp installed, which requires a C++ compiler and Python 2.7.3 or higher.
 
+    $ npm install node-gyp
     $ node-gyp rebuild
 
 If you have problem configuring Node-gyp with Python, I have a already built module (wincredmgr.node) that can be directly copied (wincredmgr.node and wincredmgr-x86.node) and used as shown in example.js
