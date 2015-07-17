@@ -1,5 +1,9 @@
 {
     "name": "credentialModule",
+    "author": "Kiran Kumar",
+    "contributors": [
+    	"Roi Atalla"
+    ],
     "version": "2.0.0",
     "main": "./build/Release/credentialModule"
 }

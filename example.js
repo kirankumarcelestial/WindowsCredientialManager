@@ -1,4 +1,4 @@
-var wincredmgr = require('./build/Release/credentialModule');
+var wincredmgr = require('./credentialModule');
 
 console.log('Writing credentials successful: ' + wincredmgr.WriteCredentials('username','secretpassword','targetName'));
 
