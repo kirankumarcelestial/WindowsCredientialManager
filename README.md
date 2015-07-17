@@ -25,7 +25,7 @@ If you have problem configuring Node-gyp with Python, I have a already built mod
 
     var wincredmgr = require('wincredmgr');
 
-    var boolResult = wincredmgr.WriteCredentials('username','password','targetName');
+    var boolResult = wincredmgr.WriteCredentials('username','secretpassword','targetName');
     console.log('Writing credentials successful: ' + boolResult);
 
     var credentials = wincredmgr.ReadCredentials('targetName');
