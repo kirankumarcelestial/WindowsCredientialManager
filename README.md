@@ -23,10 +23,10 @@ If you have problem configuring Node-gyp with Python, I have a already built mod
 ###Usage
    =====
 
-var wincredmgr = require('wincredmgr');
+    var wincredmgr = require('wincredmgr');
 
-console.log('Writing credentials successful: ' + wincredmgr.WriteCredentials('username','password','targetName')
+    console.log('Writing credentials successful: ' + wincredmgr.WriteCredentials('username','password','targetName')
 
-var credentials = wincredmgr.ReadCredentials('targetName');
-console.log(credentials.username);
-console.log(credentials.password);
+    var credentials = wincredmgr.ReadCredentials('targetName');
+    console.log(credentials.username);
+    console.log(credentials.password);
