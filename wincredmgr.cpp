@@ -23,11 +23,11 @@ void WriteCredentials(const FunctionCallbackInfo<Value>& args) {
         return;
     }
 
-	String::Utf8Value username(args[0]->ToString());
-	String::Utf8Value password(args[1]->ToString());
-	String::Utf8Value targetName(args[2]->ToString());
+    String::Utf8Value username(args[0]->ToString());
+    String::Utf8Value password(args[1]->ToString());
+    String::Utf8Value targetName(args[2]->ToString());
 
-	CREDENTIALA credsToAdd = {};
+    CREDENTIALA credsToAdd = {};
     credsToAdd.Flags = 0;
     credsToAdd.UserName = const_cast<LPSTR>(*username);
     credsToAdd.Type = CRED_TYPE_GENERIC;
@@ -59,9 +59,9 @@ void ReadCredentials(const FunctionCallbackInfo<Value>& args) {
         return;
     }
 
-	v8::String::Utf8Value strTarget(args[0]->ToString());
+    v8::String::Utf8Value strTarget(args[0]->ToString());
 
-	PCREDENTIALA creds;
+    PCREDENTIALA creds;
     BOOL bRet = CredRead(*strTarget, 1, 0, &creds);
 
     if (!bRet) {
